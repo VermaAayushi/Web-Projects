@@ -1,0 +1,83 @@
+body{
+    margin: 0%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: none;
+    overflow: hidden;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .right {
+    position: absolute;
+    right: 0px;
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+  }
+  .banner {
+    background-color: rgb(94, 94, 94);
+    padding: 50px;
+    font-family: 'Shippori Mincho B1', serif;
+    text-align: center;
+    font-size: 30px;
+  }
+  .footer {
+    padding: 5px;
+    left: 0;
+    bottom: 0;
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+    padding: 5px;
+  }
+  .footer p {
+    margin: 0%;
+    display: block;
+    margin: auto;
+    height: 30px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  @media (max-width: 540px){
+    .feat {
+  
+      display: block;
+      margin: auto;
+    }
+    .item{
+      padding: 0;
+    }
+    .topnav a{
+      font-size: 17px;
+      padding: 5px;
+    }
+    .right{
+      position: relative;
+    }
+    .title{
+      font-size: 30px;
+    }
+    .tagline{
+      font-size: 20px;
+    }
+    .cimage{
+      width: 100%;
+    }
+  }

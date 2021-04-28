@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contact.css">
+    <title>Contact Us</title>
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["message"].value;
+          if (x == "") {
+            alert("Message must be filled out");
+            return false;
+          }
+          else{
+            alert("Message Sent!");
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="#"><b>Scoot Scoot</b></a></li>
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li class="right"><a href="login.html">Log In</a></li>
+        </ul>
+    </div>
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>US</span>
+                </div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <form name="myForm" action="welcome.html" onsubmit="return validateForm()" method="post">
+                    <input class="app-form-control" placeholder="NAME" type="text" name="fname">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL" type="text" name="email">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO" type="text" name="Contact">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE" type="text" name="message">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <input type="submit" value="SUBMIT" class="app-form-button">
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="footer">
+        <a href="https://www.instagram.com/" style="text-decoration: none; padding: 2px;">
+            <img src="assets/instagram.png" width="30px">
+        </a>
+        <a href="https://twitter.com/home" style="text-decoration: none; padding: 2px;">
+            <img src="assets/twitter.png" width="30px">
+        </a>
+        <a href="https://www.facebook.com/" style="text-decoration: none; padding: 2px;">
+            <img src="assets/facebook.png" width="30px">
+        </a>
+        <p>© 2020 Copyright: <a href="welcome.html" style="text-decoration: none;">Scoot Scoot</a></p>
+    </div>
+</body>
+</html>
